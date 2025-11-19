@@ -6,79 +6,79 @@ const PROXY_BASE = 'http://localhost:8081/proxy?url=';
 const PROVIDERS = {
     chatgpt: {
         label: 'ChatGPT',
-        icon: '../AI-Aplication/images/providers/chatgpt.svg',
+        icon: 'images/providers/chatgpt.svg',
         url: 'https://chatgpt.com/chat',
         noIframe: true
     },
     claude: {
         label: 'Claude',
-        icon: '../AI-Aplication/images/providers/claude.png',
+        icon: 'images/providers/claude.png',
         url: 'https://claude.ai',
         noIframe: true
     },
     gemini: {
         label: 'Gemini',
-        icon: '../AI-Aplication/images/providers/gemini.png',
+        icon: 'images/providers/gemini.png',
         url: 'https://gemini.google.com/app',
         noIframe: true
     },
     deepseek: {
         label: 'DeepSeek',
-        icon: '../AI-Aplication/images/providers/deepseek.png',
+        icon: 'images/providers/deepseek.png',
         url: 'https://chat.deepseek.com',
         noIframe: true
     },
     perplexity: {
         label: 'Perplexity',
-        icon: '../AI-Aplication/images/providers/perplexity.png',
+        icon: 'images/providers/perplexity.png',
         url: 'https://www.perplexity.ai',
         noIframe: true
     },
     grok: {
         label: 'Grok',
-        icon: '../AI-Aplication/images/providers/grok.png',
+        icon: 'images/providers/grok.png',
         url: 'https://grok.com',
         noIframe: true
     },
     doubao: {
         label: '豆包',
-        icon: '../AI-Aplication/images/providers/doubao.png',
+        icon: 'images/providers/doubao.png',
         url: 'https://www.doubao.com',
         noIframe: true
     },
     tongyi: {
         label: '通义千问',
-        icon: '../AI-Aplication/images/providers/tongyi.png',
+        icon: 'images/providers/tongyi.png',
         url: 'https://tongyi.aliyun.com',
         noIframe: true
     },
     google: {
         label: 'Google',
-        icon: '../AI-Aplication/images/providers/google.png',
+        icon: 'images/providers/google.png',
         url: 'https://www.google.com',
         noIframe: true
     },
     notebooklm: {
         label: 'NotebookLM',
-        icon: '../AI-Aplication/images/providers/notebooklm.png',
+        icon: 'images/providers/notebooklm.png',
         url: 'https://notebooklm.google.com',
         noIframe: true
     },
     ima: {
         label: 'IMA',
-        icon: '../AI-Aplication/images/providers/ima.jpeg',
+        icon: 'images/providers/ima.jpeg',
         url: 'https://ima.qq.com',
         noIframe: true
     },
     attention_local: {
         label: 'Attention',
-        icon: '../AI-Aplication/images/时间管道.JPG',
+        icon: 'images/时间管道.JPG',
         url: '../AI-Aplication/vendor/attention/index.html',
         noIframe: false
     },
     excalidraw: {
         label: 'Excalidraw',
-        icon: '../AI-Aplication/images/providers/excalidraw.svg',
+        icon: 'images/providers/excalidraw.svg',
         url: 'https://excalidraw.com',
         noIframe: false
     }
