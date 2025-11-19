@@ -1,0 +1,13 @@
+[build]
+  # 发布目录设置为 web 文件夹
+  publish = "web"
+  
+  # 构建命令（静态网站不需要构建，但可以留空）
+  command = ""
+
+# 重定向规则 - 所有路径都指向 index.html（用于单页应用）
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
