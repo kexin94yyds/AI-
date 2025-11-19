@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AI 全家桶 - 桌面版</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="../AI-Aplication/images/icon48.png">
+</head>
+<body>
+    <!-- 桌面视图 (Launcher) -->
+    <div id="launcher-view" class="launcher-view">
+        <div class="launcher-content">
+            <div class="time-widget" id="time-widget">
+                <h1 id="clock-time">12:00</h1>
+                <p id="clock-date">1月1日 星期一</p>
+            </div>
+            
+            <div class="app-grid" id="app-grid">
+                <!-- 图标由 JS 动态生成 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 应用视图 (App View) -->
+    <div id="app-view" class="app-view" style="display: none;">
+        <!-- 顶部工具栏 -->
+        <header class="header">
+            <div class="header-left">
+                <button id="home-btn" class="icon-btn" title="返回桌面">
+                    <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                </button>
+                <h2 id="current-provider-name">App Name</h2>
+            </div>
+            <div class="header-right">
+                <button id="open-external" class="action-btn">
+                    <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                    新窗口
+                </button>
+            </div>
+        </header>
+
+        <!-- Iframe 容器 -->
+        <div id="iframe-container" class="iframe-wrapper">
+            <iframe id="ai-frame" src="" allow="microphone; camera; clipboard-read; clipboard-write"></iframe>
+            
+            <!-- 无法加载时的遮罩 (Iframe Blocked) -->
+            <div id="iframe-fallback" class="fallback-overlay" style="display: none;">
+                <div class="fallback-content">
+                    <img id="fallback-icon" src="" alt="Logo">
+                    <h3 id="fallback-title">无法在网页内嵌入</h3>
+                    <p>由于 <span id="fallback-provider"></span> 的安全策略，无法直接在当前页面加载。</p>
+                    <a id="fallback-link" href="#" target="_blank" class="primary-btn">在新窗口中打开</a>
+                    <p class="hint">提示：大多数 AI 服务商都禁止被第三方网页嵌入。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
