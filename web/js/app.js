@@ -66,7 +66,7 @@ const PROVIDERS = {
     },
     aistudio: {
         label: 'AI Studio',
-        icon: 'images/providers/google.png',
+        icon: 'images/providers/aistudio.svg',
         url: 'https://aistudio.google.com',
         noIframe: true
     },
