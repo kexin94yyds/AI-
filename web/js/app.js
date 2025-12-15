@@ -64,6 +64,12 @@ const PROVIDERS = {
         url: 'https://notebooklm.google.com',
         noIframe: true
     },
+    aistudio: {
+        label: 'AI Studio',
+        icon: 'images/providers/google.png',
+        url: 'https://aistudio.google.com',
+        noIframe: true
+    },
     ima: {
         label: 'IMA',
         icon: 'images/providers/ima.jpeg',
